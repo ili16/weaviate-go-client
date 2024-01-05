@@ -1,4 +1,4 @@
-module github.com/weaviate/weaviate-go-client/v4
+module github.com/ili16/weaviate-go-client/v4
 
 go 1.21
 
@@ -8,6 +8,7 @@ require (
 	github.com/stretchr/testify v1.8.4
 	github.com/testcontainers/testcontainers-go v0.26.0
 	github.com/weaviate/weaviate v1.23.0
+	github.com/weaviate/weaviate-go-client/v4 v4.12.1
 	golang.org/x/oauth2 v0.11.0
 	google.golang.org/grpc v1.59.0
 	google.golang.org/protobuf v1.31.0

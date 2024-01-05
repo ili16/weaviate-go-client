@@ -7,7 +7,7 @@ A go native client for weaviate.
 In order to get the go client v4 issue this command:
 
 ```bash
-$ go get github.com/weaviate/weaviate-go-client/v4@v4.x.x
+$ go get github.com/ili16/weaviate-go-client/v4@v4.x.x
 ```
 
 where `v4.x.x` is the desired go client v4 version, for example `v4.12.1`
@@ -27,7 +27,7 @@ import (
   "context"
   "fmt"
 
-  client "github.com/weaviate/weaviate-go-client/v4/weaviate"
+  client "github.com/ili16/weaviate-go-client/v4/weaviate"
 )
 
 func main() {

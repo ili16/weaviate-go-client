@@ -20,15 +20,15 @@ type Getter struct {
 }
 
 // Do get and return the weaviate schema
-func (sg *Getter) Do(ctx context.Context) (*Dump, error) {
+func (sg *Getter) Do(ctx context.Context) ([]byte, error) {
 	responseData, err := sg.connection.RunREST(ctx, "/schema", http.MethodGet, nil)
 	if err != nil {
 		return nil, except.NewDerivedWeaviateClientError(err)
 	}
 	if responseData.StatusCode == 200 {
-		var fullSchema Dump
+		var fullSchema []byte
 		decodeErr := responseData.DecodeBodyIntoTarget(&fullSchema)
-		return &fullSchema, decodeErr
+		return fullSchema, decodeErr
 	}
 	return nil, except.NewWeaviateClientError(responseData.StatusCode, string(responseData.Body))
 }

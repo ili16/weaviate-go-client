@@ -19,9 +19,9 @@ import (
 	"os"
 	"testing"
 
+	wvt "github.com/ili16/weaviate-go-client/v4/weaviate"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	wvt "github.com/weaviate/weaviate-go-client/v4/weaviate"
 	"github.com/weaviate/weaviate-go-client/v4/weaviate/testenv"
 	"github.com/weaviate/weaviate/entities/models"
 	"github.com/weaviate/weaviate/entities/schema"
